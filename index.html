@@ -90,13 +90,13 @@
   <legend >Moves :
   <div class="icon-div">
     <button class="icon-btn" onclick="PlayGame('Rock')">
-      <img class="move-icon" src="./images/Rock.png" alt="">
+      <img class="move-icon" src="./Rock.png" alt="">
     </button>
     <button class="icon-btn" onclick="PlayGame('Paper')">
-      <img class="move-icon" src="./images/Paper.png" alt="">
+      <img class="move-icon" src="./Paper.png" alt="">
     </button>
     <button class="icon-btn" onclick="PlayGame('Scissor')">
-      <img class="move-icon" src="./images/Scissor.png" alt="">
+      <img class="move-icon" src="./Scissor.png" alt="">
     </button>
     </legend>
 
@@ -152,7 +152,7 @@ function PlayGame(playerMove) {
   Location.setItem(
     "gameMoves1",
     JSON.stringify(
-      (gameMoves.innerHTML = `<span class="player">Your</span> Move : <img class="move-icon" src="./images/${playerMove}.png" alt="${playerMove}">    <img class="move-icon" src="./images/${ComputerMove}.png" alt="${ComputerMove}"> : <span class="player">Computer</span> Move`),
+      (gameMoves.innerHTML = `<span class="player">Your</span> Move : <img class="move-icon" src="./${playerMove}.png" alt="${playerMove}">    <img class="move-icon" src="./${ComputerMove}.png" alt="${ComputerMove}"> : <span class="player">Computer</span> Move`),
     ),
   );
 
